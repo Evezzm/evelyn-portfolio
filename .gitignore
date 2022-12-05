@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/portfolio-evelyn-build/node_modules
 /.pnp
 .pnp.js
 
