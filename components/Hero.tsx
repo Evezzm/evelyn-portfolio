@@ -32,7 +32,7 @@ function Hero({}: Props) {
           <Cursor cursorColor="#F7A" />
         </h1>
       </div>
-      <div className="pt-5">
+      <div className="">
         <Link href="#about">
           <button className="heroButton">About</button>
         </Link>
