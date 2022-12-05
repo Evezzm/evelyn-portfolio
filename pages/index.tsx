@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import About from '../components/About'
+import ContactMe from '../components/ContactMe'
 import Experience from '../components/Experience'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
@@ -32,6 +33,9 @@ export default function Home() {
     </section>
     <section id='projects' className='snap-start'>
       <Projects />
+    </section>
+    <section id='contact-me' className='snap-start'>
+      <ContactMe />
     </section>
         {/* projects */}
         {/* contact me */}

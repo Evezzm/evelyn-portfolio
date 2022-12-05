@@ -7,7 +7,7 @@ type Props = {};
 function Skills({}: Props) {
   return (
     <motion.div
-      initial={{ x: -200, opacity: 0 }}
+      initial={{opacity: 0 }}
       whileInView={{ x: 0, opacity: 0.8 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: false }}
@@ -20,7 +20,6 @@ function Skills({}: Props) {
         Hover over a skill for current proficiency
       </h3>
       <div className="grid grid-cols-4 gap-5">
-        <Skill />
         <Skill />
         <Skill />
         <Skill />
