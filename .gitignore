@@ -2,9 +2,11 @@
 
 # dependencies
 /node_modules
-/portfolio-evelyn-build/node_modules
 /.pnp
 .pnp.js
+/portfolio-sanity-server/node_modules
+/portfolio-evelyn-build/node_modules
+
 
 # testing
 /coverage
