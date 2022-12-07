@@ -6,8 +6,7 @@ type Props = {};
 function Projects({}: Props) {
   const projects = [1, 2, 2, 2, 1];
   return (
-    <div 
-    className="h-screen flex overflow-hidden relative flex-col text-left md:text-left md:flex-row max-x-full justify-evenly mx-auto items-center z-0">
+    <div className="h-screen flex overflow-hidden relative flex-col text-left md:text-left md:flex-row max-x-full justify-evenly mx-auto items-center z-0">
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Projects
       </h3>
@@ -19,11 +18,11 @@ function Projects({}: Props) {
             className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"
           >
             <motion.img
-            initial={{ y: -300, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 0.8 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: false }}
-            className="w-56 h-56 md:w-64 md:h-64 xl:w-72 xl:h-72"
+              initial={{ y: -300, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 0.8 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: false }}
+              className="w-56 h-56 md:w-64 md:h-64 xl:w-72 xl:h-72"
               src="https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png"
               alt="project"
             />
