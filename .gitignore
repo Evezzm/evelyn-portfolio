@@ -6,6 +6,7 @@
 .pnp.js
 /portfolio-sanity-server/node_modules
 /portfolio-evelyn-build/node_modules
+/*/node_modules
 
 
 # testing
