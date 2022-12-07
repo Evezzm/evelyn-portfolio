@@ -20,7 +20,7 @@ function About({}: Props) {
       <div className="space-y-10 ox-0 md:px-10">
         <h4 className="text-3xl font-semibold">
           Here is a{" "}
-          <span className="underline decoration-[#F7A80A]">little</span>{" "}
+          <span className="underline decoration-[#F7AB0A]">little</span>{" "}
           background
         </h4>
         <p className="text-base">
