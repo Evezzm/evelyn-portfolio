@@ -29,7 +29,7 @@ export interface PageInfo extends SanityBody {
     profilePic: image;
   }
 
-  export interface skill extends SanityBody {
+  export interface Skill extends SanityBody {
     _type: "skill";
     image: Image;
     progress: number;
