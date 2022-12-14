@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { PageInfo } from "../typings";
 import { urlFor } from "../sanity";
 
-type Props = { pageInfo: PageInfo };
+type Props = { pageInfo: PageInfo[] };
 
 function About({ pageInfo }: Props) {
   return (
@@ -17,7 +17,7 @@ function About({ pageInfo }: Props) {
         transition={{ duration: 0.5 }}
         viewport={{ once: false }}
         className="-mb-20 md:mb-0 flex-shrink-0 rounded-full w-56 h-56 object-cover md:rounded-lg md:w-64 md:h-64 xl:w-100 xl:h-100 mt-8"
-        src={urlFor(pageInfo?.profilePic).url()}
+        src={urlFor(pageInfo[0]?.profilePic).url()}
       />
       <div className="space-y-10 ox-0 md:px-10">
         <h4 className="text-3xl font-semibold">
@@ -25,7 +25,7 @@ function About({ pageInfo }: Props) {
           <span className="underline decoration-[#F7AB0A]">little</span>{" "}
           background
         </h4>
-        <p className="text-base">{pageInfo?.backgroundInformation}</p>
+        <p className="text-base">{pageInfo[0]?.backgroundInformation}</p>
       </div>
     </div>
   );
