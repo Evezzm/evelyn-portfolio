@@ -27,7 +27,8 @@
     "react-simple-typewriter": "^5.0.1",
     "react-social-icons": "^5.15.0",
     "tailwind-scrollbar": "^2.0.1",
-    "typescript": "4.9.3"
+    "typescript": "4.9.3",
+    "vercel": "^28.8.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

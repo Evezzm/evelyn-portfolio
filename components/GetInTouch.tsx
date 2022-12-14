@@ -12,15 +12,17 @@ function GetInTouch({}: Props) {
         transition={{ duration: 0.5 }}
         className="flex flex-row items-center text-gray-300 cursor-pointer"
       >
+        <div className="pr-2">
         <SocialIcon
           className="cursor-pointer"
           network="email"
           fgColor="gray"
           bgColor="transparent"
         />
-        <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+        <p className="uppercase hidden md:inline-flex text-sm text-gray-400 pr-2">
           Get In Touch
         </p>
+        </div>
       </motion.div>
     </div>
   );
