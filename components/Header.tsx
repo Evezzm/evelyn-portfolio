@@ -3,10 +3,11 @@ import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import GetInTouch from "./GetInTouch";
+import { Social } from "../typings";
 
-type Props = {};
+type Props = {socials: Social[];};
 
-function Header({}: Props) {
+function Header({socials}: Props) {
   return (
     <header className="sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div
@@ -16,21 +17,14 @@ function Header({}: Props) {
         className="flex flex-row items-center"
       >
         {/* social icon */}
-        <SocialIcon
-          url="https://github.com/Evezzm"
+        {socials.map((social) => (
+          <SocialIcon
+          key={social._id}
+          url={social.url}
           fgColor="gray"
-          bgColor="transparent"
-        />
-        <SocialIcon
-          url="https://github.com/Evezzm"
-          fgColor="gray"
-          bgColor="transparent"
-        />
-        <SocialIcon
-          url="https://www.linkedin.com/in/evelyn-zeng/"
-          fgColor="gray"
-          bgColor="transparent"
-        />
+          bgColor="transparent" />
+        ))}
+
       </motion.div>
 
       {/* <Link href="#contact-me"> */}
