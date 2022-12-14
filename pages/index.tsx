@@ -18,7 +18,7 @@ import { fetchSocials } from "../utils/fetchSocials";
 
 
 type Props = {
-  pageInfo: PageInfo;
+  pageInfo: PageInfo[];
   experiences: Experience[];
   skills: Skill[];
   projects: Project[];
@@ -51,7 +51,7 @@ const Home=({pageInfo,experiences,skills,projects,socials}:Props)=> {
         <Projects projects={projects}/>
       </section>
       <section id="contact" className="snap-start">
-        <ContactMe />
+        <ContactMe pageInfo={pageInfo}/>
       </section>
       <Link href="#hero">
         <footer className="sticky bottom-5 w-full cursor-pointer">
@@ -70,7 +70,7 @@ const Home=({pageInfo,experiences,skills,projects,socials}:Props)=> {
 export default Home;
 
 export const getStaticProps:GetStaticProps<Props> = async () => {
-  const pageInfo: PageInfo = await fetchPageInfos();
+  const pageInfo: PageInfo[] = await fetchPageInfos();
   const experiences: Experience[] = await fetchExperiences();
   const skills: Skill[] = await fetchSkills();
   const projects: Project[] = await fetchProjects();
