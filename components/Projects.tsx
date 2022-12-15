@@ -13,22 +13,24 @@ function Projects({ projects }: Props) {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Projects
       </h3>
-
+      <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-xs">
+        Move left and right for more projects
+      </h3>
       <div className="relative w-full flex snap-x snap-mandatory z-20 mt-8 overflow-x-scroll overflow-y-hidden scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
         {projects?.map((project) => (
           <div
             key={project._id}
             className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"
           >
-            <motion.img
+            <a href={project?.linkToBuild} target="blank"><motion.img
               initial={{ y: -300, opacity: 0 }}
               whileInView={{ y: 0, opacity: 0.8 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: false }}
-              className="w-72 h-56 md:w-64 md:h-64 xl:w-72 xl:h-72"
+              className="w-72 h-48 md:w-72 md:h-48 xl:w-80 xl:h-56"
               src={urlFor(project?.image).url()}
               alt="project"
-            />
+            /></a> 
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-3xl font-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50">
