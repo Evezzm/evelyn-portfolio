@@ -16,11 +16,11 @@ function About({ pageInfo }: Props) {
         whileInView={{ x: 0, opacity: 0.8 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: false }}
-        className="-mb-20 md:mb-0 flex-shrink-0 rounded-full w-56 h-56 object-cover md:rounded-lg md:w-64 md:h-64 xl:w-100 xl:h-100 mt-8"
+        className="-mb-20 md:mb-0 flex-shrink-0 rounded-full w-40 h-40 sm:w-56 sm:h-56 object-cover md:rounded-lg md:w-64 md:h-64 xl:w-100 xl:h-100 mt-8"
         src={urlFor(pageInfo[0]?.profilePic).url()}
       />
-      <div className="space-y-10 ox-0 md:px-10">
-        <h4 className="text-3xl font-semibold">
+      <div className="space-y-5 sm:space-y-10 md:px-10">
+        <h4 className="text-xl sm:text-2xl md:text-3xl font-semibold">
           Here is a{" "}
           <span className="underline decoration-[#F7AB0A]">little</span>{" "}
           background

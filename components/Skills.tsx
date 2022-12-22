@@ -10,7 +10,7 @@ type Props = {
 function Skills({skills}: Props) {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
+      initial={{ x:-200, opacity: 0 }}
       whileInView={{ x: 0, opacity: 0.8 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: false }}
@@ -23,10 +23,13 @@ function Skills({skills}: Props) {
         Hover over a skill for current proficiency
       </h3>
       <div className="grid grid-cols-4 gap-5">
-        {skills?.slice(0,skills.length/2).map(skill=>(
+        {/* {skills?.slice(0,skills.length/2).map(skill=>(
           <Skill key={skill._id} skill={skill}/>
         ))}
         {skills?.slice(skills.length/2,skills.length).map(skill=>(
+          <Skill key={skill._id} skill={skill}/>
+        ))} */}
+        {skills?.map(skill=>(
           <Skill key={skill._id} skill={skill}/>
         ))}
       </div>
