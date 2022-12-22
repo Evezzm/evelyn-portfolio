@@ -27,9 +27,9 @@ function Header({socials}: Props) {
 
       </motion.div>
 
-      {/* <Link href="#contact-me"> */}
+      <Link href="#contact">
       <GetInTouch />
-      {/* </Link> */}
+      </Link>
     </header>
   );
 }

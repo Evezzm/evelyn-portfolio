@@ -36,7 +36,7 @@ function Hero({ pageInfo }: Props) {
           <Cursor cursorColor="#F7AB0A" />
         </h1>
       </div>
-      <div className="z-20">
+      <div className="z-20 flex flex-col sm:flex-row">
         <Link href="#about">
           <button className="heroButton">About</button>
         </Link>
