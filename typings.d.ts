@@ -31,14 +31,16 @@ export interface PageInfo extends SanityBody {
 export interface Skill extends SanityBody {
   _type: "skill";
   image: Image;
-  progress: number;
+  skillName: string;
+  skillNameExtended: string;
   title: string;
 }
 
 export interface Technology extends SanityBody {
   _type: "skill";
   image: Image;
-  progress: number;
+  skillName: string;
+  skillNameExtended: string;
   title: string;
 }
 

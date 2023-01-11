@@ -2,7 +2,7 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import GetInTouch from "./GetInTouch";
+import GetInTouch from "./Contact/GetInTouch";
 import { Social } from "../typings";
 
 type Props = {socials: Social[];};
