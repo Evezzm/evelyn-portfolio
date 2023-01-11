@@ -10,11 +10,17 @@ export default {
       type: "string",
     },
     {
-      name: "progress",
-      title: "Progress",
-      type: "number",
-      description: "Progress of skill from 0 to 100%",
-      validation: (Rule) => Rule.min(0).max(100),
+      name: "skillName",
+      title: "SkillName",
+      type: "string",
+      description: "Name of skill",
+      // validation: (Rule) => Rule.min(0).max(100),
+    },
+    {
+      name: "skillNameExtended",
+      title: "SkillNameExtended",
+      type: "string",
+      description: "Extended Name of skill",
     },
     {
       name: "image",

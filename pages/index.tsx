@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import About from "../components/About";
-import ContactMe from "../components/ContactMe";
-import WorkExperience from "../components/WorkExperience";
+import ContactMe from "../components/Contact/ContactMe";
+import WorkExperience from "../components/Experience/WorkExperience";
 import Header from "../components/Header";
-import Hero from "../components/Hero";
+import Hero from "../components/Hero/Hero";
 import Projects from "../components/Projects";
-import Skills from "../components/Skills";
+import Skills from "../components/Skill/Skills";
 import Link from "next/link";
 import { GetStaticProps } from "next";
 import { Experience, PageInfo, Project, Skill, Social } from "../typings";
