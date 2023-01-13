@@ -21,7 +21,7 @@ const ContactMe = ({ pageInfo }: Props) => {
 
   return (
     <div className="h-screen flex relative flex-col text-center md:text-left xl:flex-row w-full sm:max-w-7xl justify-evenly mx-auto items-center px-10">
-      <h3 className="absolute top-16 sm:top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-16 sm:top-24 uppercase tracking-[20px] text-gray-400 text-2xl">
         Contact
       </h3>
 
@@ -31,10 +31,10 @@ const ContactMe = ({ pageInfo }: Props) => {
           <span className="underline decoration-[#F7AB0A]/50">Lets Talk.</span>
         </h4>
         <div className="space-y-1 sm:space-y-3">
-          <div className="flex items-center space-x-5 justify-center">
+          {/* <div className="flex items-center space-x-5 justify-center">
             <PhoneIcon className="text-[#F7AB0A]/50 h-7 w-7 animate-pulse" />
             <p className="text-base sm:text-xl">{pageInfo[0]?.phoneNumber}</p>
-          </div>
+          </div> */}
           <div className="flex items-center space-x-5 justify-center">
             <EnvelopeIcon className="text-[#F7AB0A]/50 h-7 w-7 animate-pulse" />
             <p className="text-base sm:text-xl">{pageInfo[0]?.email}</p>

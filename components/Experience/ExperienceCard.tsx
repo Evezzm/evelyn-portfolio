@@ -31,7 +31,7 @@ function ExperienceCard({ experience }: Props) {
             />
           ))}
         </div>
-        <p className="uppercase text-sm py-5 text-gray-500">
+        <p className="uppercase text-sm py-5 text-gray-400">
           {new Date(experience?.dateStarted).toLocaleDateString('en-US',{year:"numeric", month:"short"})} -{" "}
           {experience?.isCurrentlyWorkingHere
             ? "Present"

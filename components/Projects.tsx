@@ -10,10 +10,10 @@ type Props = {
 function Projects({ projects }: Props) {
   return (
     <div className="h-screen flex overflow-hidden relative flex-col text-left md:text-left md:flex-row max-x-full justify-evenly mx-auto items-center z-0">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-400 text-2xl">
         Projects
       </h3>
-      <h3 className="absolute top-36 text-center text-wrap uppercase tracking-[3px] text-gray-500 text-xs">
+      <h3 className="absolute top-36 text-center text-wrap uppercase tracking-[3px] text-gray-400 text-xs">
         Move left and right for more projects
       </h3>
       <div className="relative w-full flex snap-x snap-mandatory z-20 mt-8 overflow-x-scroll overflow-y-hidden scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">

@@ -21,7 +21,7 @@ function Header({socials}: Props) {
           <SocialIcon
           key={social._id}
           url={social.url}
-          fgColor="gray"
+          fgColor="lightgray"
           bgColor="transparent" />
         ))}
 
