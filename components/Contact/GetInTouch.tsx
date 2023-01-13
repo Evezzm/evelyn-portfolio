@@ -16,10 +16,10 @@ function GetInTouch({}: Props) {
         <SocialIcon
           className="cursor-pointer"
           network="email"
-          fgColor="gray"
+          fgColor="lightgray"
           bgColor="transparent"
         />
-        <p className="uppercase hidden md:inline-flex text-sm text-gray-400 pr-2">
+        <p className="uppercase hidden md:inline-flex text-sm text-gray-300 pr-2">
           Get In Touch
         </p>
         </div>

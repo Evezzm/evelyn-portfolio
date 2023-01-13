@@ -13,12 +13,16 @@ function Hero({ pageInfo }: Props) {
   const [text, count] = useTypewriter({
     words: [
       `Hi, my name is ${pageInfo[0]?.name}`,
-      "I am a front-end developer",
-      "I love coding",
+      "I am a Front End Developer",
+      "I ♡ creating beautiful websites",
+      "I ♡ building performant applications",
+      "I ♡ creating delightful user experiences",
     ],
     loop: true,
     delaySpeed: 2000,
   });
+
+  `Hi, my name is ${pageInfo[0]?.name}`
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircle />
@@ -28,7 +32,7 @@ function Hero({ pageInfo }: Props) {
         alt="profile-image"
       />
       <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
+        <h2 className="text-sm uppercase text-gray-400 pb-2 tracking-[15px]">
           {pageInfo[0]?.role}
         </h2>
         <h1 className="text-4xl md:text-4xl lg:text-5xl font-semibold px-10">
