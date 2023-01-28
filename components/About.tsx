@@ -18,6 +18,7 @@ function About({ pageInfo }: Props) {
         viewport={{ once: false }}
         className="-mb-20 md:mb-0 flex-shrink-0 rounded-full w-40 h-40 sm:w-56 sm:h-56 object-cover md:rounded-lg md:w-64 md:h-64 xl:w-100 xl:h-100 mt-8"
         src={urlFor(pageInfo[0]?.profilePic).url()}
+        alt="profile image"
       />
       <div className="space-y-5 sm:space-y-10 md:px-10">
         <h4 className="text-xl sm:text-2xl md:text-3xl font-semibold">

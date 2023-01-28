@@ -18,6 +18,7 @@ function GetInTouch({}: Props) {
           network="email"
           fgColor="lightgray"
           bgColor="transparent"
+          aria-label="contact me"
         />
         <p className="uppercase hidden md:inline-flex text-sm text-gray-300 pr-2">
           Get In Touch

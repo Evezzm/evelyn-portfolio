@@ -1,7 +1,6 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import GetInTouch from "./Contact/GetInTouch";
 import { Social } from "../typings";
 
@@ -27,9 +26,9 @@ function Header({socials}: Props) {
 
       </motion.div>
 
-      <Link href="#contact">
+      <a href="#contact">
       <GetInTouch />
-      </Link>
+      </a>
     </header>
   );
 }
