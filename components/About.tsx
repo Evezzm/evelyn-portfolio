@@ -26,7 +26,11 @@ function About({ pageInfo }: Props) {
           <span className="underline decoration-[#F7AB0A]">little</span>{" "}
           background
         </h4>
-        <p className="text-base">{pageInfo[0]?.backgroundInformation}</p>
+        <ul className="text-base text-left">
+          {pageInfo[0]?.backgroundInformation.map((point, i) => (
+            <li key={i}>{point}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );
