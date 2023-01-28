@@ -41,14 +41,14 @@ const Home=({pageInfo,experiences,skills,projects,socials}:Props)=> {
       <section id="about" className="snap-center">
         <About pageInfo={pageInfo}/>
       </section>
-      <section id="experience" className="snap-center">
-        <WorkExperience experiences={experiences}/>
-      </section>
       <section id="skills" className="snap-start">
         <Skills skills={skills}/>
       </section>
       <section id="projects" className="snap-start">
         <Projects projects={projects}/>
+      </section>
+      <section id="experience" className="snap-center">
+        <WorkExperience experiences={experiences}/>
       </section>
       <section id="contact" className="snap-start">
         <ContactMe pageInfo={pageInfo}/>

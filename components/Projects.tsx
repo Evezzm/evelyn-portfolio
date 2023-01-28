@@ -28,13 +28,13 @@ function Projects({ projects }: Props) {
                 whileInView={{ y: 0, opacity: 0.8 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: false }}
-                className="w-64 h-40 sm:w-72 sm:h-48 xl:w-80 xl:h-56"
+                className="aspect-auto w-80 sm:w-80 md:w-96"
                 src={urlFor(project?.image).url()}
                 alt="project"
               />
             </a>
             <div className="space-y-5 sm:space-y-10 px-0 md:px-10 max-w-6xl">
-              <h4 className="text-3xl font-semibold text-center">
+              <h4 className="text-xl sm:text-3xl font-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50">
                   {project?.title}
                 </span>
@@ -45,11 +45,11 @@ function Projects({ projects }: Props) {
                     className="h-10 w-10"
                     key={tech._id}
                     src={urlFor(tech.image).url()}
-                    alt="tech"
+                    alt="skill"
                   />
                 ))}
               </div>
-              <p className="text-base sm:text-lg text-center md:text-left">
+              <p className="text-base sm:text-lg md:text-xl text-center md:text-left">
                 {project?.summary}
               </p>
             </div>
